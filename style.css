@@ -122,14 +122,28 @@ button, input, select {
 .brand-mark {
   width: 38px;
   height: 38px;
-  background: linear-gradient(135deg, var(--c-navy) 0%, var(--c-teal) 100%);
-  border: 1px solid var(--c-cyan);
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--c-pale-aqua);
+  overflow: hidden;
   box-shadow: var(--glow-cyan-sm);
+  background-color: var(--c-deep-navy);
+}
+
+.brand-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-logo-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin-right: 0.5rem;
+  filter: drop-shadow(0 0 6px rgba(18, 178, 193, 0.4));
 }
 
 .mark-symbol {
