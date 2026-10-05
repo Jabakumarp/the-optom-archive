@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Optom Archive — The digital resource hub for optometry students</title>
+  <meta name="description" content="Academic notes, presentations, books, question banks, and seminar materials for optometry students, aligned with the TNMGRMU B.Optom curriculum.">
+  
+  <!-- Fonts: Newsreader (Editorial Serif) & Plus Jakarta Sans / Inter (Clean Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="site-body">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="#home" class="brand-link" id="brandLink">
+        <div class="brand-mark">
+          <span class="mark-symbol">⌖</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">THE OPTOM ARCHIVE</span>
+          <span class="brand-sub">Curated B.Optom Digital Library</span>
+        </div>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="#home" class="nav-item active" data-view="home">Home</a>
+        <a href="#resources" class="nav-item" data-view="resources">Resources</a>
+        <a href="#subjects" class="nav-item" data-view="subjects">Subjects</a>
+        <a href="#search" class="nav-item nav-search-btn" data-view="search">
+          <span class="search-icon">⌕</span>
+          <span>Search</span>
+          <kbd class="kbd-hint">/</kbd>
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT VIEWS ================= -->
+  <main class="main-content" id="mainContent">
+
+    <!-- ---------------- VIEW 1: HOME ---------------- -->
+    <section class="view-section active" id="view-home">
+      <!-- Hero -->
+      <div class="hero-block">
+        <div class="hero-inner">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            THE DIGITAL RESOURCE HUB FOR OPTOMETRY STUDENTS
+          </div>
+
+          <h1 class="hero-title">
+            Everything you need to study optometry.
+          </h1>
+
+          <p class="hero-lead">
+            Notes, presentations, books, question banks, seminar materials, and other academic resources, organized in one searchable archive.
+          </p>
+
+          <!-- Hero Search Input -->
+          <div class="hero-search-wrapper">
+            <div class="hero-search-bar" id="heroSearchBar">
+              <span class="search-symbol">⌕</span>
+              <input type="text" id="heroSearchInput" placeholder="Search the archive (e.g. retinoscopy, AC/A ratio, slit lamp)..." autocomplete="off" spellcheck="false">
+              <button class="search-action-btn" id="heroSearchSubmit" aria-label="Search">Search</button>
+            </div>
+            <div class="quick-tags">
+              <span class="quick-label">Suggested:</span>
+              <button class="quick-tag-chip" data-search="retinoscopy">Retinoscopy</button>
+              <button class="quick-tag-chip" data-search="AC/A Ratio">AC/A Ratio</button>
+              <button class="quick-tag-chip" data-search="Contact Lens">Contact Lens</button>
+              <button class="quick-tag-chip" data-search="Glaucoma">Glaucoma</button>
+              <button class="quick-tag-chip" data-search="TNMGRMU">Past Papers</button>
+            </div>
+          </div>
+
+          <!-- Academic Metrics Strip -->
+          <div class="archive-metrics-strip">
+            <div class="metric-item">
+              <span class="metric-num">1,240+</span>
+              <span class="metric-desc">curated resources</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-num">4</span>
+              <span class="metric-desc">academic years</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-num">20+</span>
+              <span class="metric-desc">core clinical subjects</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-num">TNMGRMU</span>
+              <span class="metric-desc">syllabus aligned</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore the Archive: Resource Categories -->
+      <section class="section-container" id="exploreCategories">
+        <div class="section-header">
+          <div>
+            <span class="section-eyebrow">THE COLLECTION</span>
+            <h2 class="section-title">Explore the archive</h2>
+          </div>
+          <a href="#resources" class="section-more-link">View all resources <span class="arrow">→</span></a>
+        </div>
+
+        <div class="category-cards-grid">
+          <!-- Notes -->
+          <div class="category-card" data-filter-type="notes">
+            <div class="card-head">
+              <span class="card-tag">COLLECTION 01</span>
+              <span class="card-icon">✎</span>
+            </div>
+            <h3 class="card-name">NOTES</h3>
+            <p class="card-count" id="count-notes">124 resources</p>
+            <p class="card-blurb">Lecture summaries, chapter outlines, and high-yield clinical revision sheets.</p>
+            <div class="card-foot">
+              <span class="explore-btn">Explore <span class="arrow">→</span></span>
+            </div>
+          </div>
+
+          <!-- Presentations -->
+          <div class="category-card" data-filter-type="presentation">
+            <div class="card-head">
+              <span class="card-tag">COLLECTION 02</span>
+              <span class="card-icon">◫</span>
+            </div>
+            <h3 class="card-name">PRESENTATIONS</h3>
+            <p class="card-count" id="count-presentation">68 resources</p>
+            <p class="card-blurb">Slide decks, clinical case photograph series, and classroom lecture presentations.</p>
+            <div class="card-foot">
+              <span class="explore-btn">Explore <span class="arrow">→</span></span>
+            </div>
+          </div>
+
+          <!-- Books & References -->
+          <div class="category-card" data-filter-type="books">
+            <div class="card-head">
+              <span class="card-tag">COLLECTION 03</span>
+              <span class="card-icon">📖</span>
+            </div>
+            <h3 class="card-name">BOOKS</h3>
+            <p class="card-count" id="count-books">42 references</p>
+            <p class="card-blurb">Standard optometry textbooks, lab manuals, and clinical reference guides.</p>
+            <div class="card-foot">
+              <span class="explore-btn">Explore <span class="arrow">→</span></span>
+            </div>
+          </div>
+
+          <!-- Question Bank -->
+          <div class="category-card" data-filter-type="question_bank">
+            <div class="card-head">
+              <span class="card-tag">COLLECTION 04</span>
+              <span class="card-icon">🗂</span>
+            </div>
+            <h3 class="card-name">QUESTION BANK</h3>
+            <p class="card-count" id="count-question_bank">96 resources</p>
+            <p class="card-blurb">TNMGRMU university past papers, model questions, viva-voce bank, and answer blueprints.</p>
+            <div class="card-foot">
+              <span class="explore-btn">Explore <span class="arrow">→</span></span>
+            </div>
+          </div>
+
+          <!-- Seminars -->
+          <div class="category-card" data-filter-type="seminar">
+            <div class="card-head">
+              <span class="card-tag">COLLECTION 05</span>
+              <span class="card-icon">🎙</span>
+            </div>
+            <h3 class="card-name">SEMINARS</h3>
+            <p class="card-count" id="count-seminar">31 resources</p>
+            <p class="card-blurb">Grand round presentations, recent clinical advancements, and journal club papers.</p>
+            <div class="card-foot">
+              <span class="explore-btn">Explore <span class="arrow">→</span></span>
+            </div>
+          </div>
+
+          <!-- Other Reference / Protocols -->
+          <div class="category-card" data-filter-type="reference">
+            <div class="card-head">
+              <span class="card-tag">COLLECTION 06</span>
+              <span class="card-icon">📋</span>
+            </div>
+            <h3 class="card-name">OTHER</h3>
+            <p class="card-count" id="count-reference">54 resources</p>
+            <p class="card-blurb">Internship logbook formats, clinic examination checklists, and research templates.</p>
+            <div class="card-foot">
+              <span class="explore-btn">Explore <span class="arrow">→</span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Browse by Subject (Editorial classification preview) -->
+      <section class="section-container bg-subtle" id="homeSubjectsPreview">
+        <div class="section-header">
+          <div>
+            <span class="section-eyebrow">CURRICULUM MAPPING</span>
+            <h2 class="section-title">Browse by subject</h2>
+          </div>
+          <a href="#subjects" class="section-more-link">Open classification <span class="arrow">→</span></a>
+        </div>
+
+        <div class="subjects-editorial-preview" id="homeSubjectPills">
+          <!-- Injected via JavaScript -->
+        </div>
+      </section>
+
+      <!-- Recently Added Highlights -->
+      <section class="section-container" id="recentAdditions">
+        <div class="section-header">
+          <div>
+            <span class="section-eyebrow">ACADEMIC FEED</span>
+            <h2 class="section-title">Recently added</h2>
+          </div>
+          <a href="#resources" class="section-more-link">Browse collection <span class="arrow">→</span></a>
+        </div>
+
+        <div class="resources-grid" id="recentResourcesList">
+          <!-- Injected via JavaScript -->
+        </div>
+      </section>
+    </section>
+
+    <!-- ---------------- VIEW 2: RESOURCES (ENGINE) ---------------- -->
+    <section class="view-section" id="view-resources">
+      <div class="resources-page-header">
+        <div class="page-title-wrap">
+          <span class="section-eyebrow">THE ARCHIVE</span>
+          <h1 class="page-title">Search the collection</h1>
+          <p class="page-subtitle">Access verified notes, clinical slide sets, books, and past exam questions.</p>
+        </div>
+
+        <!-- Inline Filter Search -->
+        <div class="resource-search-box">
+          <span class="search-symbol">⌕</span>
+          <input type="text" id="resourceQueryInput" placeholder="Search resources, topics, subjects, authors..." autocomplete="off">
+          <button class="clear-btn" id="clearResourceQuery" title="Clear query">✕</button>
+        </div>
+      </div>
+
+      <!-- Filter Controls Toolbar -->
+      <div class="filter-toolbar">
+        <!-- Type Filter Pills -->
+        <div class="filter-group">
+          <span class="filter-label">Type</span>
+          <div class="filter-pills" id="typeFilterPills">
+            <button class="filter-pill active" data-type="all">All</button>
+            <button class="filter-pill" data-type="notes">Notes</button>
+            <button class="filter-pill" data-type="presentation">Presentations</button>
+            <button class="filter-pill" data-type="books">Books</button>
+            <button class="filter-pill" data-type="question_bank">Questions</button>
+            <button class="filter-pill" data-type="seminar">Seminars</button>
+            <button class="filter-pill" data-type="reference">Reference</button>
+          </div>
+        </div>
+
+        <div class="filter-row-secondary">
+          <!-- Year Filter Pills -->
+          <div class="filter-group">
+            <span class="filter-label">Year</span>
+            <div class="filter-pills" id="yearFilterPills">
+              <button class="filter-pill active" data-year="all">All</button>
+              <button class="filter-pill" data-year="1">Year 1</button>
+              <button class="filter-pill" data-year="2">Year 2</button>
+              <button class="filter-pill" data-year="3">Year 3</button>
+              <button class="filter-pill" data-year="4">Year 4</button>
+            </div>
+          </div>
+
+          <!-- Subject Dropdown Filter -->
+          <div class="filter-group">
+            <span class="filter-label">Subject</span>
+            <div class="select-wrapper">
+              <select id="subjectSelectFilter" class="custom-select">
+                <option value="all">All Subjects</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Sort Selector -->
+          <div class="filter-group sort-group">
+            <span class="filter-label">Sort</span>
+            <div class="select-wrapper">
+              <select id="sortSelect" class="custom-select">
+                <option value="newest">Recently Added</option>
+                <option value="title">Title (A-Z)</option>
+                <option value="year">Academic Year</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Active Filters & Counter Bar -->
+      <div class="results-meta-bar">
+        <div class="results-count-wrapper">
+          <span class="count-number" id="resourcesCountDisplay">0</span>
+          <span class="count-label">resources</span>
+          <div class="active-chips-tray" id="activeChipsTray"></div>
+        </div>
+        <button class="reset-filters-btn" id="resetFiltersBtn">Reset filters</button>
+      </div>
+
+      <!-- Resource Cards Grid -->
+      <div class="resources-grid" id="resourcesListContainer">
+        <!-- Rendered via JavaScript -->
+      </div>
+
+      <!-- Empty State -->
+      <div class="empty-state hidden" id="resourcesEmptyState">
+        <div class="empty-icon">⌕</div>
+        <h3 class="empty-title">No resources found</h3>
+        <p class="empty-text">No archive records match your current filter parameters. Try adjusting your search keyword or clearing selected year/subject filters.</p>
+        <button class="empty-reset-btn" id="emptyResetBtn">Clear all filters</button>
+      </div>
+    </section>
+
+    <!-- ---------------- VIEW 3: SUBJECTS (CLASSIFICATION) ---------------- -->
+    <section class="view-section" id="view-subjects">
+      <div class="subjects-page-header">
+        <span class="section-eyebrow">LIBRARY CLASSIFICATION</span>
+        <h1 class="page-title">Subjects Classification System</h1>
+        <p class="page-subtitle">Structured syllabus classification based on the 4-year B.Optom academic curriculum.</p>
+      </div>
+
+      <div class="classification-catalog" id="classificationCatalog">
+        <!-- Rendered via JavaScript: 01 Basic Sciences, 02 Optics, 03 Clinical Optometry, 04 Ocular Health, 05 Specialised Areas -->
+      </div>
+    </section>
+
+    <!-- ---------------- VIEW 4: SEARCH (METADATA-AWARE) ---------------- -->
+    <section class="view-section" id="view-search">
+      <div class="search-view-header">
+        <span class="section-eyebrow">ARCHIVE SEARCH ENGINE</span>
+        <h1 class="page-title">Search the archive</h1>
+        <p class="page-subtitle">Find exact notes, slide decks, papers, and past question bank entries across all 4 years.</p>
+
+        <!-- Big Search Bar -->
+        <div class="main-search-bar-wrap">
+          <span class="search-symbol">⌕</span>
+          <input type="text" id="globalSearchInput" placeholder="Search by topic, symptom, instrument, author, or paper name..." autocomplete="off" autofocus>
+          <button class="clear-btn" id="clearGlobalSearch" title="Clear">✕</button>
+        </div>
+
+        <div class="search-shortcuts-bar">
+          <span class="shortcuts-title">Try searching:</span>
+          <button class="search-term-btn" data-query="retinoscopy">retinoscopy</button>
+          <button class="search-term-btn" data-query="AC/A ratio">AC/A ratio</button>
+          <button class="search-term-btn" data-query="scleral lens">scleral lens</button>
+          <button class="search-term-btn" data-query="slit lamp">slit lamp</button>
+          <button class="search-term-btn" data-query="glaucoma">glaucoma</button>
+          <button class="search-term-btn" data-query="prentice">prentice rule</button>
+        </div>
+      </div>
+
+      <!-- Grouped Search Results Display -->
+      <div class="search-results-output" id="searchResultsOutput">
+        <!-- Grouped by resource type (Notes, Presentations, Question Bank, Seminars, Books, Reference) -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= RESOURCE PREVIEW MODAL ================= -->
+  <div class="modal-backdrop" id="resourceModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">✕</button>
+      
+      <div class="modal-content-wrap">
+        <div class="modal-classification-badge" id="modalClassification">03 · CLINICAL OPTOMETRY</div>
+        
+        <h2 class="modal-title" id="modalTitle">AC/A Ratio Calculation and Clinical Management</h2>
+        
+        <div class="modal-meta-pills" id="modalMetaPills">
+          <span class="meta-pill type-pill" id="modalType">NOTES</span>
+          <span class="meta-pill year-pill" id="modalYear">Year 3</span>
+          <span class="meta-pill subject-pill" id="modalSubject">Binocular Vision</span>
+          <span class="meta-pill format-pill" id="modalFormat">PDF · 2.4 MB</span>
+        </div>
+
+        <div class="modal-divider"></div>
+
+        <div class="modal-body-section">
+          <h4 class="modal-section-heading">Overview</h4>
+          <p class="modal-description" id="modalDesc">Detailed overview will appear here.</p>
+        </div>
+
+        <div class="modal-info-grid">
+          <div class="info-grid-item">
+            <span class="info-label">Syllabus Match</span>
+            <span class="info-val" id="modalCurriculum">TNMGRMU B.Optom Regs</span>
+          </div>
+          <div class="info-grid-item">
+            <span class="info-label">Author / Source</span>
+            <span class="info-val" id="modalAuthor">Dept. of Optometry</span>
+          </div>
+          <div class="info-grid-item">
+            <span class="info-label">Pages / Slides</span>
+            <span class="info-val" id="modalPages">14 pages</span>
+          </div>
+          <div class="info-grid-item">
+            <span class="info-label">Repository Path</span>
+            <span class="info-val code-path" id="modalPath">docs/year-3/binocular-vision/...</span>
+          </div>
+        </div>
+
+        <div class="modal-tags-wrap">
+          <span class="info-label">Index Keywords:</span>
+          <div class="modal-tags-list" id="modalTagsList"></div>
+        </div>
+
+        <div class="modal-actions-bar">
+          <a href="#" id="modalOpenBtn" class="action-btn primary" target="_blank" rel="noopener">
+            <span>Open Resource Document</span>
+            <span class="btn-arrow">↗</span>
+          </a>
+          <button class="action-btn secondary" id="modalFilterSimilarBtn">
+            Find related resources
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col brand-col">
+        <div class="footer-brand-row">
+          <span class="brand-symbol">⌖</span>
+          <span class="footer-brand-title">THE OPTOM ARCHIVE</span>
+        </div>
+        <p class="footer-tagline">The digital resource hub for optometry students.</p>
+        <p class="footer-note">Structured academic repository aligned with the Tamil Nadu Dr. M.G.R. Medical University (TNMGRMU) B.Optom curriculum.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Curriculum Years</h4>
+        <ul class="footer-links">
+          <li><a href="#resources?year=1">Year 1 · Basic Sciences & Optics</a></li>
+          <li><a href="#resources?year=2">Year 2 · Clinical Optics & Diseases</a></li>
+          <li><a href="#resources?year=3">Year 3 · Contact Lens, BV & Glaucoma</a></li>
+          <li><a href="#resources?year=4">Year 4 · Internship & Protocols</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Resource Types</h4>
+        <ul class="footer-links">
+          <li><a href="#resources?type=notes">Revision Notes</a></li>
+          <li><a href="#resources?type=presentation">Clinical Slide Decks</a></li>
+          <li><a href="#resources?type=books">Reference Books</a></li>
+          <li><a href="#resources?type=question_bank">University Question Banks</a></li>
+          <li><a href="#resources?type=seminar">Clinical Seminars</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Archive</h4>
+        <p class="footer-academic-text">
+          Open-access academic archive for students and optometrists. No accounts, no ads, pure academic access.
+        </p>
+        <div class="footer-version-tag">
+          <span class="dot"></span> Archive V1.0 · Ready for GitHub Pages
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <p class="copyright">The Optom Archive &copy; 2026. Built with precision for Optometry education.</p>
+      <a href="#home" class="back-to-top" id="backToTop">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

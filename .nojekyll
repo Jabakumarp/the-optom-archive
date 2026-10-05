@@ -1,0 +1,2 @@
+# GitHub Pages configuration marker
+# Disables Jekyll processing so all folders (data/, docs/) are served statically.
